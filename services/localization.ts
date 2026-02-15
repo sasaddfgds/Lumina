@@ -1,0 +1,75 @@
+
+import { Language } from '../types';
+
+const translations = {
+  en: {
+    tagline: "Your collaborative writing muse. Start with a thought, an image, or a file.",
+    placeholder: "What should we write today? A mystery novel? A pitch deck? A heartfelt letter?",
+    attachments: "Attachments",
+    addFiles: "Add Files",
+    optionalFiles: "Optional: Upload images or docs for context",
+    initialize: "Initialize Canvas",
+    thinking: "Lumina is thinking...",
+    crafting: "Lumina is crafting your draft...",
+    craftingSub: "Connecting your thoughts into words.",
+    editorPlaceholder: "Start writing your masterpiece...",
+    proactiveIdeas: "Proactive Ideas",
+    keepWriting: "Keep writing for suggestions...",
+    apply: "Apply",
+    share: "Share",
+    save: "Save",
+    words: "Words",
+    chars: "Chars",
+    active: "Lumina AI Partner Active",
+    rewrite: "Rewrite",
+    shorten: "Shorten",
+    expand: "Expand",
+    translate: "Translate",
+    ask: "Ask...",
+    toEnglish: "to English",
+    toRussian: "to Russian",
+    back: "Back",
+    customPlaceholder: "Tell AI what to do...",
+    style: "Style",
+    modern: "Modern",
+    typewriter: "Typewriter",
+    swiss: "Swiss"
+  },
+  ru: {
+    tagline: "Ваша муза для совместного творчества. Начните с мысли, изображения или файла.",
+    placeholder: "Что напишем сегодня? Детектив? Презентацию? Душевное письмо?",
+    attachments: "Вложения",
+    addFiles: "Добавить файлы",
+    optionalFiles: "Опционально: загрузите фото или документы для контекста",
+    initialize: "Создать холст",
+    thinking: "Lumina думает...",
+    crafting: "Lumina создает черновик...",
+    craftingSub: "Соединяем ваши мысли в слова.",
+    editorPlaceholder: "Начните писать свой шедевр...",
+    proactiveIdeas: "Активные идеи",
+    keepWriting: "Продолжайте писать для получения советов...",
+    apply: "Применить",
+    share: "Поделиться",
+    save: "Сохранить",
+    words: "Слов",
+    chars: "Знаков",
+    active: "Партнер Lumina AI активен",
+    rewrite: "Перефразировать",
+    shorten: "Сократить",
+    expand: "Развернуть",
+    translate: "Перевести",
+    ask: "Спросить...",
+    toEnglish: "на английский",
+    toRussian: "на русский",
+    back: "Назад",
+    customPlaceholder: "Скажите ИИ, что сделать...",
+    style: "Стиль",
+    modern: "Модерн",
+    typewriter: "Машинка",
+    swiss: "Швейцария"
+  }
+};
+
+export const useTranslation = (lang: Language) => {
+  return (key: keyof typeof translations['en']) => translations[lang][key] || key;
+};

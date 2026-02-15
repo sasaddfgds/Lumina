@@ -1,0 +1,7 @@
+{
+  "name": "Lumina - The Magic Writer",
+  "description": "A distraction-free, AI-powered writing companion that acts as a true thought partner, offering proactive suggestions and seamless inline iterations.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
